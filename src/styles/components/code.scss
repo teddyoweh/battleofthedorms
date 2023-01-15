@@ -5,6 +5,7 @@ nav {
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding: 20px;
     img{
         width: 100px;
         height: 100px;
@@ -19,15 +20,20 @@ nav {
         padding: 0 20px;
         a{
             text-decoration: none;
-            color: #000;
+            color:white;
             font-size: 1.2rem;
-            font-weight: 600;
-            padding: 10px 20px;
-            border-radius: 10px;
-            transition: all 0.3s ease;
+            font-weight: 200;
+            padding: 5px 20px;
+            border-radius: 540px;
+            cursor: pointer;
+            transition: 0.3s;
             &:hover{
-                background-color: #000;
-                color: #fff;
+                background: #a9abaa33;
+                transition:  0.3s;
+
+            }
+            &.active{
+                background: #a9abaa33;
             }
         }
     }
@@ -36,32 +42,43 @@ nav {
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+
+
     
     .img{
         background: url(../../assets/banner.jpeg);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        width: 98%;
-        height: 700px;
+        width: 100%;
+        height: 68vh;
         display: flex;
         flex-direction: column;
         align-items: center;
- 
-        border-radius: 20px;
+        filter: brightness(0.5);
+  }
+        .content{
+            position: absolute;
         .top{
             display: flex;
             flex-direction: column;
-            align-items: center;
+            align-items: flex-start;
+            margin-top: 50px;
         }
 
-        h1{
-            font-size: 6rem;
-            color: #fff;
-            font-weight: 700;
-            margin-top: 100px;
+        .h1{
+          
+            // margin-top: 100px;
+            display: flex;
+            flex-direction: column;
+            span{
+                font-size: 6rem;
+                color: #fff;
+                font-weight: 700;
+                line-height: 1;
+            }
         }
         p{
             font-size: 1.5rem;
@@ -108,6 +125,51 @@ nav {
         }
     }
      
+}
+.sports-m{
+    padding:13px 20px;
+    label.header{
+        font-size: 30px;
+        font-weight: 400;
+    }
+    .sports{
+        padding: 0px 0px;
+        display: flex;
+        flex-direction: row;
+ 
+    }
+    .sport{
+        cursor: pointer;
+        margin-right: 2%;
+        width: max-content;
+        &:hover{
+            transition: 0.3s;
+            img{
+                filter: brightness(0.5);
+            }
+        }
+        .img{
+            width: max-content;
+            background: linear-gradient(45deg, #c6c6c6, #293732);
+            padding: 5px;
+            border-radius: 18px;
+        }
+        img{
+            transition: 0.3s;
+            border-radius: 20px;
+height: 150px;
+            width: 250px;
+            object-fit: cover;
+ 
+        }.text{
+            position: absolute;
+            margin-top: -47px;
+            padding: 0px 18px;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: white;
+        }
+    }
 }
 .patners {
     margin-top: 20px;
@@ -167,13 +229,13 @@ padding: 10px 20px ;
             cursor: pointer;
             &.active {
                 transition: 0.3s;
-                background-color: #8000FF;
+                background: linear-gradient(45deg, #000000, #8000ff);
                 color: #fff;
 
             }
             &:hover{
                 transition: 0.3s;
-                background-color: #8e28f5d5;
+                background: linear-gradient(45deg, #000000, #8e28f5d5);
                 color: #fff;}
 
         }
@@ -269,5 +331,67 @@ padding: 10px 20px ;
             }
         }
 
+    }
+}
+.schedule-mmm{
+    .header-img{
+        height: 32vh;
+        background:url('../../assets/tournaments.jpeg');
+        h1{
+            padding: 40px;
+    color: white;
+    font-size: 47px;
+    font-weight: 900;
+        }
+ img{
+
+    height: 434px;
+    width: 100%;
+    object-fit: cover;
+
+ }
+    }
+    .schedule-m{
+ 
+    }
+  
+    .schedule-sports{
+        display: flex;
+        flex-direction: row;
+        padding: 20px;
+        .schedule-sport-a{
+            margin-right: 2%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+        .schedule-sport{
+ 
+            width: max-content;
+            padding: 3px;
+            border-radius: 100%;
+            cursor: pointer;
+            transition: 0.6s;
+            &.active{
+                transition: 0.6s;
+                background: linear-gradient(45deg, #000000, #8000ff);
+            }
+            &:hover{
+                transition: 0.6s;
+                background: linear-gradient(45deg, #000000, #8000ff);
+            }
+            .schedule-img{
+                background: white;
+    width: max-content;
+    padding: 4px;
+    border-radius: 100%;
+    img{
+        height: 50px;
+        width: 50px;
+        border-radius: 100%;
+    }
+            }
+        }
     }
 }

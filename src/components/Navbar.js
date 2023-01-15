@@ -4,9 +4,9 @@ import logo from '../assets/logo.png';
 const Navbar = () => {
   return (
   <nav>
-    <a href="/">
+    {/* <a href="/">
         <img src={logo} alt="logo" />
-    </a>
+    </a> */}
     <div className="items">
         <Link to="/">Home</Link>
         <Link to="/schedule"> Schedule</Link>

@@ -1,5 +1,11 @@
 import React,{useState} from "react";
 import { Navbar } from "../../components";
+import banner from "../../assets/tournaments.jpeg";
+import pingpong from "../../assets/pingpong2.jpeg";
+import bball from "../../assets/bball2.jpeg";
+import swim from "../../assets/swim2.jpeg";
+import track from "../../assets/track2.jpeg";
+import soccer from "../../assets/soccer2.jpeg";
 function LeaderboardPage(){
     const [option,setOption] = useState(true);
     const [selectedinter,setSelectedinter] = useState(0);
@@ -18,12 +24,71 @@ function LeaderboardPage(){
     ]
 
     return(
-        <div>
+        <div className="schedule-mmm">
+        
+            <div className="header-img">
             <Navbar />
+            <h1>Tournament Leaderboard</h1>
+            {/* <img src={banner} alt="" /> */}
+            </div>
+        <div className="schedule-sports">
+            <div className="schedule-sport-a">
+
+            
+            <div className="schedule-sport active">
+                <div className="schedule-img">
+                    <img src={pingpong } ></img>
+                </div>
+            </div>
+            <label htmlFor="">Ping Pong</label>
+            </div>
+            <div className="schedule-sport-a">
+
+            
+            <div className="schedule-sport">
+                <div className="schedule-img">
+                    <img src={bball } ></img>
+                </div>
+            </div>
+            <label htmlFor="">Basketball</label>
+            </div>
+            <div className="schedule-sport-a">
+
+            
+            <div className="schedule-sport">
+                <div className="schedule-img">
+                    <img src={swim } ></img>
+                </div>
+            </div>
+            <label htmlFor="">Swimming</label>
+            </div>
+            <div className="schedule-sport-a">
+
+            
+            <div className="schedule-sport">
+                <div className="schedule-img">
+                    <img src={track} ></img>
+                </div>
+            </div>
+            <label htmlFor="">Track</label>
+            </div>
+            <div className="schedule-sport-a">
+
+            
+<div className="schedule-sport">
+    <div className="schedule-img">
+        <img src={soccer} ></img>
+    </div>
+</div>
+<label htmlFor="">Soccer</label>
+</div>
+        </div>
+        <div className="schedule-m">
+    
             <div className="schedule-page">
                 <div className="schedule-top">
                     <div className="schedule-header">
-                        <h1>Tournament Leaderboard</h1>
+                      
                     </div>
                     <div className="schedule-options">
                         <span onClick={()=>setOption(!option)} className={option && "active"}>All</span>
@@ -84,6 +149,7 @@ function LeaderboardPage(){
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     )
 }
