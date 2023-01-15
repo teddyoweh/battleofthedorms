@@ -1,2 +1,3 @@
 import RegisterPage from "./Register";
-export{RegisterPage}
+import IndvPage from "./IndvPage";
+export{RegisterPage,IndvPage}
