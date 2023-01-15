@@ -5,7 +5,27 @@ nav {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     padding: 20px;
+    .reg-btn{
+        margin-left: 20px;
+        padding: 8px 20px;
+        border-radius: 40px;
+        background-color: white;
+        color: #293732;
+        font-size: 1.2rem;
+        font-weight: 400;
+        text-decoration: none;
+        cursor: pointer;
+        transition: 0.3s;
+        &:hover{
+            transition: 0.3s;
+          
+    background-color: #293732;
+    color: white;
+
+        }
+    }
     img{
         width: 100px;
         height: 100px;

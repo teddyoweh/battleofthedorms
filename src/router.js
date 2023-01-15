@@ -6,7 +6,7 @@ import {
   Route,
   Link,
 } from "react-router-dom";
-
+import { RegisterPage } from "./views/Auth";
 import { HomePage,SchedulePage,LeaderboardPage,ErrorPage } from "./views";
 
 const router = createBrowserRouter([
@@ -22,6 +22,10 @@ const router = createBrowserRouter([
     },{
         path: "/leaderboard",
         element: <LeaderboardPage />
+    },
+    {
+        path: "/register",
+        element: <RegisterPage />
     }
 ])
 
