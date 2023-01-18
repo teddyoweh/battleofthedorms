@@ -25,7 +25,7 @@ function HomePage() {
               <span>of the dorms</span>
             </div>
             <p>
-            Join the battle of the paddles and dominate your dorm's competition in this epic campus-wide ping pong tournament!
+            Join the battle of the dorms and dominate your dorm's competition in this epic campus-wide sports tournament!
             </p>
             {/* <div className="date">
               <b>Inter Dorm Registration Deadline: </b>
