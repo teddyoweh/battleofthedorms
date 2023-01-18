@@ -44,12 +44,12 @@ function RegisterPage(){
                         </div>
                         <small> Spring 2023 </small>
                         <div className="applybutton">
-                            <Link to='./tabletennis'>
+                            <a href="https://forms.office.com/r/AFGwSFSNWB">
                      
                             <span>
                                 Apply
                             </span>
-                            </Link>
+                            </a>
                         </div>
                     </div>
                     </div>
