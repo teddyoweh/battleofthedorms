@@ -1,8 +1,9 @@
 import React,{useState} from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../assets/logo.png';
-const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(true);
+const Navbar = (props) => {
+  const [isOpen, setIsOpen] = useState(false);
+ 
   return (
   <nav>
     {/* <a href="/">
@@ -26,10 +27,12 @@ const Navbar = () => {
       </div>
     </div>
     <div className="mrp">
-      <div onClick={()=>setIsOpen(!isOpen)} className="menu-btn">
+      <div onClick={()=>    setIsOpen(!isOpen)} className="menu-btn">
       <i class='bx bx-menu'></i>
       </div>
-      <div className={isOpen==false?"hide":"menu-box"}>
+    {
+    isOpen==true&&
+   <div className={"menu-box"}>
 
       <div className="items">
         <Link to="/">Home</Link>
@@ -37,7 +40,12 @@ const Navbar = () => {
         <Link to="/">Leaderboard</Link>
         <Link to="/">Media</Link>
     </div>
-      </div>
+    <div className="reg-btn">
+
+
+<Link to="/register">Register</Link>
+</div>
+      </div>  } 
     </div>
 
     

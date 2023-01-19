@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import { Navbar } from "../../components";
 import banner from "../../assets/banner.jpeg";
 import sgaimg from "../../assets/sga.jpeg";
@@ -9,6 +9,8 @@ import swim from "../../assets/swim.jpeg";
 import track from "../../assets/track.jpeg";
 import soccer from "../../assets/soccer.jpeg";
 function HomePage() {
+  const [isOpen, setIsOpen] = useState(true);
+ 
   return (
     <div>
       
@@ -18,7 +20,7 @@ function HomePage() {
           
           </div>
           <div className="content">
-          <Navbar />
+          <Navbar  />
           <div className="top">
             <div className="h1">
               <span>Battle</span>
