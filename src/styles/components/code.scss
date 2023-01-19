@@ -622,6 +622,13 @@ width: 98%;
 }
 
 @media screen and (max-width: 768px) {
+
+.sports-m .sports {
+ width: 100%;
+    flex-direction: column;
+.sport{
+    width: 100%;
+}}
     nav{
         padding: 0px;
     .left,.right{
