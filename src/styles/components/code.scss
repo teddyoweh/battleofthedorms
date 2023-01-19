@@ -153,21 +153,24 @@ nav {
         font-weight: 400;
     }
     .sports{
-        padding: 0px 0px;
-        display: flex;
-        flex-direction: row;
-        overflow-x: scroll;
+        padding: 8px 0px;
+            display: flex;
+            flex-direction: row;
+            overflow-x: scroll;
+            overflow-y: scroll;
+            width: 100%;
+         
    
-        ::-webkit-scrollbar {
-            width: 0px;
-            background: transparent;
-          }
+        // ::-webkit-scrollbar {
+        //     width: 0px;
+        //     background: transparent;
+        //   }
  
     }
     .sport{
         cursor: pointer;
         margin-right: 2%;
-        width: max-content;
+        width: 20vw;
         &:hover{
             transition: 0.3s;
             img{
@@ -175,21 +178,24 @@ nav {
             }
         }
         .img{
-            width: max-content;
+            width: 100%;
             background: linear-gradient(45deg, #c6c6c6, #293732);
             padding: 5px;
             border-radius: 18px;
         }
         img{
+         
             transition: 0.3s;
             border-radius: 20px;
-height: 150px;
-            width: 250px;
+            height: 178px;
+            width: 100%;
             object-fit: cover;
+        
+        
  
         }.text{
-            position: absolute;
-            margin-top: -47px;
+            position: relative;
+            top: -47px;
             padding: 0px 18px;
             font-size: 1.5rem;
             font-weight: 600;
