@@ -82,13 +82,15 @@ nav {
         .content{
             position: absolute;
             width: 100%;
-            padding-left: 40px;
+ 
         .top{
             display: flex;
             flex-direction: column;
             align-items: flex-start;
             margin-top: 50px;
+            padding-left: 40px;
         }
+
 
         .h1{
           
@@ -576,7 +578,7 @@ width: 98%;
 @media screen and (max-width: 768px) {
     .banner .img {
        
-        height: 45vh;
+        height: 55vh;
     }    
     .schedule-mmm .header-img h1 {
         padding: 40px;
