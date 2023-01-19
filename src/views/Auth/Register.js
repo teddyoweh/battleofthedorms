@@ -62,7 +62,7 @@ function RegisterPage(){
                         <label htmlFor="">Deadline: </label>
                         </div>
                         <span>
-                            24th January 2023.
+                            30th January 2023.
                         </span>
                     </div>
                 </div>
