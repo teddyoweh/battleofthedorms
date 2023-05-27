@@ -1,2 +1,0 @@
-# battleofthepaddles
- Frontend Code
