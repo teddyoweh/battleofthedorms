@@ -1,0 +1,20 @@
+.floater1{
+   position: absolute;
+    height: 500px;
+    width: 826px;
+    background: rgb(255 119 95 / 14%);
+    transform: translate(249px, -200px) rotate(37deg);
+    right: 0;
+    top: 0;
+}
+
+.floater2{
+    position: absolute;
+    height: 500px;
+    width: 826px;
+    background: rgb(255 119 95 / 37%);
+    transform: translate(449px, 400px) rotate(304deg);
+    right: 0;
+    top: 0;
+    border-radius: 40px;
+}

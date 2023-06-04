@@ -1,0 +1,429 @@
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[2].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[2].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[2].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[2].oneOf[13].use[5]!./src/app/styles/nav.scss ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  z-index: 999;
+  position: -webkit-sticky;
+  position: sticky;
+}
+.nav-container .logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.nav-container .logo img {
+  width: 220px;
+  height: 120px;
+  object-fit: cover;
+}
+.nav-container .nav-items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.nav-container .nav-items .nav-item {
+  margin-top: 10px;
+  margin-right: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.nav-container .nav-items .nav-item.active a {
+  color: #FF775F;
+}
+.nav-container .nav-items .nav-item a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #333;
+  font-size: 18px;
+  font-family: Lato;
+  transition: all 0.5s;
+}
+.nav-container .nav-items .nav-item a:hover {
+  transition: all 0.5s;
+  color: #FF775F;
+}
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[2].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[2].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[2].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[2].oneOf[13].use[5]!./src/app/styles/landing.scss ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.landing {
+  width: 100%;
+  z-index: 999;
+  overflow-x: hidden;
+}
+.landing .hero {
+  padding-top: 100px !important;
+  width: 100%;
+  height: 81vh;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+.landing .hero .small-text {
+  padding: 0px 40px;
+}
+.landing .hero .small-text label {
+  font-size: 16px;
+  font-family: poppins;
+  padding: 6px 15px;
+  background: rgba(249, 157, 141, 0.1098039216);
+  border-radius: 30px;
+  color: #ff775f;
+  border-style: solid;
+  border-width: 1px;
+  font-weight: 300;
+}
+.landing .hero .hero-text {
+  padding: 0px 40px;
+}
+.landing .hero .hero-text label {
+  color: #333;
+  font-size: 80px;
+  font-weight: 900;
+  font-family: Circular Std, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+.landing .hero .hero-text label span {
+  color: #FF775F;
+}
+.landing .hero .hero-subtext {
+  padding: 2px 40px;
+}
+.landing .hero .hero-subtext p {
+  width: 65%;
+  color: #333;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: poppins;
+}
+.landing .hero .hero-btns {
+  padding: 30px 40px;
+}
+.landing .hero .hero-btns a {
+  margin-right: 10px;
+  color: #FF775F;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 5px;
+  font-family: poppins;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 16px 16px;
+  transition: all 0.5s;
+  text-transform: capitalize;
+}
+.landing .hero .hero-btns a:hover {
+  background: #FF775F;
+  color: #fff;
+  transition: all 0.5s;
+}
+.landing .hero .hero-btns a:nth-child(1) {
+  background: #FF775F;
+  color: #fff;
+  transition: all 0.5s;
+}
+.landing .hero .hero-btns a:nth-child(1):hover {
+  background: #f85235;
+  color: #fff;
+  transition: all 0.5s;
+}
+.landing .content {
+  padding: 50px 0px;
+  min-height: 50vh;
+  width: 100%;
+  z-index: 999;
+  position: -webkit-sticky;
+  position: sticky;
+}
+.landing .content .patners {
+  min-height: 50vh;
+  width: 100%;
+}
+.landing .content .patners .patners-header {
+  text-align: center;
+  padding: 40px 0;
+}
+.landing .content .patners .patners-header label {
+  color: #333;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: capitalize;
+  font-family: poppins;
+}
+.landing .content .patners .patners-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.landing .content .patners .patners-list .patner {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-right: 40px;
+}
+.landing .content .patners .patners-list .patner .patner-img {
+  filter: grayscale(180%);
+  opacity: 0.5;
+  transition: all 0.6s;
+  cursor: pointer;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.landing .content .patners .patners-list .patner .patner-img img {
+  width: 100%;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+}
+.landing .content .patners .patners-list .patner .patner-img img.scale2 {
+  transform: scale(2);
+}
+.landing .content .patners .patners-list .patner:hover .patner-name {
+  animation-name: slideup;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
+.landing .content .patners .patners-list .patner:hover .patner-img {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.1);
+  transition: all 0.8s;
+}
+.landing .content .patners .patners-list .patner .patner-name {
+  text-align: center;
+  width: 100%;
+  animation-name: slidedown;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
+.landing .content .patners .patners-list .patner .patner-name label {
+  font-size: 13px;
+  font-family: poppins;
+  background: #333;
+  color: #ffcec5;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+.landing .dorms {
+  width: 100%;
+  background-color: white;
+  padding: 40px 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.landing .dorms .dorms-head label {
+  color: #333;
+  font-size: 30px;
+  font-family: poppins;
+}
+.landing .dorms .dorms-body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0 40px;
+}
+.landing .dorms .dorms-body .dorm {
+  margin-right: 15px;
+  margin-bottom: 15px;
+  border-radius: 30px;
+  color: #f85235;
+  font-weight: 500;
+  cursor: pointer;
+  background-color: #f3f3f3;
+  padding: 8px 16px;
+  font-size: 13px;
+  font-family: poppins;
+}
+.landing .sports-body {
+  background: rgb(251, 251, 251);
+  padding-top: 50px;
+  margin-bottom: 60px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #dedede;
+}
+.landing .sports-body .sports-head {
+  padding: 20px 100px;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  font-family: poppins;
+}
+.landing .sports-body .sports-head label {
+  font-size: 30px;
+}
+.landing .sports-body .sports-head span {
+  font-size: 18px;
+}
+.landing .sports-body .sport-link {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #FF775F;
+  font-family: poppins;
+  font-size: 18px;
+  transition: all 0.6s;
+}
+.landing .sports-body .sport-link a {
+  color: #f85235;
+  font-family: poppins;
+  font-size: 18px;
+  transition: all 0.6s;
+}
+.landing .sports-body .sport-link:hover {
+  color: #f85235;
+  transition: all 0.6s;
+}
+.landing .sports-body .sport-link i {
+  font-size: 23px;
+}
+.landing .sports {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px 100px;
+}
+.landing .sports .sport {
+  flex-basis: calc(33.33% - 10px); /* Adjust this value based on your desired spacing */
+  width: 20%;
+  padding-bottom: 4%;
+  margin-bottom: 10px;
+}
+.landing .sports .sport img {
+  width: 90% !important;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.landing .sports .sport .sport-name {
+  margin-top: 14px;
+}
+.landing .sports .sport .sport-name label {
+  font-family: Circular Std, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  color: #333;
+  font-weight: 500;
+  font-size: 25px;
+}
+.landing .sports .sport .sport-desc {
+  margin-top: 10px;
+}
+.landing .sports .sport .sport-desc p {
+  width: 95%;
+  font-family: poppins;
+  font-weight: 350;
+  color: #343434;
+  text-align: left;
+}
+.landing .schedule {
+  padding: 50px 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.landing .schedule .schedule-content .schedule-head {
+  width: 80%;
+}
+.landing .schedule .schedule-content .schedule-head label {
+  font-family: poppins;
+  font-size: 30px;
+  font-weight: 500;
+  color: #333;
+}
+.landing .schedule .schedule-content .schedule-head p {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: 450;
+  font-family: Lato;
+  line-height: 1.5;
+  color: #515151;
+}
+.landing .schedule .schedule-content .schedule-btn {
+  margin-top: 20px;
+  width: max-content;
+  background: #FF775F;
+  color: #fff;
+  border-style: solid;
+  border-radius: 30px;
+  font-family: poppins;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 9px 10px;
+  transition: all 0.5s;
+  text-transform: capitalize;
+}
+.landing .schedule .schedule-content .schedule-btn:hover {
+  background: white;
+  color: #FF775F;
+  border-color: #FF775F;
+  transition: all 0.5s;
+}
+.landing .schedule .schedule-content .schedule-btn a {
+  color: inherit;
+}
+.landing .schedule .schedule-img img {
+  width: 500px;
+  height: 500px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+@keyframes slideup {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+@keyframes slidedown {
+  0% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[2].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[2].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[2].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[2].oneOf[13].use[5]!./src/app/styles/floaters.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.floater1 {
+  position: absolute;
+  height: 500px;
+  width: 826px;
+  background: rgba(255, 119, 95, 0.14);
+  transform: translate(249px, -200px) rotate(37deg);
+  right: 0;
+  top: 0;
+}
+
+.floater2 {
+  position: absolute;
+  height: 500px;
+  width: 826px;
+  background: rgba(255, 119, 95, 0.37);
+  transform: translate(449px, 400px) rotate(304deg);
+  right: 0;
+  top: 0;
+  border-radius: 40px;
+}

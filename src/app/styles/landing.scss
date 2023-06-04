@@ -1,0 +1,409 @@
+.landing{
+    width: 100%;
+ 
+    z-index: 999;
+    overflow-x: hidden;
+   
+ 
+    
+    .hero{
+        padding-top: 100px !important;
+        width: 100%;
+        height: 81vh;
+        background-size: cover;
+        background-position: center;
+        border-radius: 10px;
+        .small-text{
+            padding: 0px 40px;
+            label{
+                font-size: 16px;
+                font-family: poppins;
+                padding: 6px 15px;
+                background: #f99d8d1c;
+                border-radius: 30px;
+                color: #ff775f;
+                border-style: solid;
+                border-width: 1px;
+                font-weight: 300;
+            }
+        }
+        .hero-text{
+            padding: 0px 40px;
+           
+            label{
+                color:#333;
+                font-size: 80px;
+                font-weight:900;
+                font-family: Circular Std,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+                span{
+                    color: #FF775F;
+             
+                }
+            }
+        }
+        .hero-subtext{
+            padding:2px 40px;
+            p{
+                width: 65%;
+                color: #333;
+                font-size: 20px;
+                font-weight: 500;
+                font-family: poppins;
+            }
+        }
+        .hero-btns{
+            padding:30px 40px;
+            a{
+                margin-right: 10px;
+                color: #FF775F;
+                border-style: solid;
+                border-width: 2px;
+                border-radius: 5px;
+                font-family: poppins;
+                font-size: 16px;
+                font-weight: 500;
+                padding: 16px 16px;
+                transition: all .5s;
+                text-transform: capitalize;
+                &:hover{
+                    background: #FF775F;
+                    color: #fff;
+                    transition: all .5s;
+                }
+                &:nth-child(1){
+                    background: #FF775F;
+                    color: #fff;
+                    transition: all .5s;
+                    &:hover{
+                        background: #f85235;
+                        color: #fff;
+                        transition: all .5s;
+                    }
+                }
+                
+            }
+        }
+    }
+    .content{
+        padding: 50px 0px;
+        min-height: 50vh;
+        width: 100%;
+    
+        z-index: 999;
+        position: sticky;
+        .patners{
+  
+            min-height: 50vh;
+            width: 100%;
+    
+            .patners-header{
+                text-align: center;
+                padding: 40px 0 ;
+                label{
+                    color: #333;
+                    font-size: 18px;
+                    font-weight: 500;
+                    text-transform: capitalize;
+                    font-family: poppins;
+                }
+            }
+            .patners-list{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                .patner{
+                    display: flex;
+                    flex-direction:column;
+                    text-align: center;
+                    justify-content: center;
+                    align-items: center;
+                    margin-right: 40px;
+                    .patner-img{
+                        filter: grayscale(180%);
+                        opacity: 0.5;
+                        transition: all .6s;
+                        cursor: pointer;
+                        padding-bottom: 40px;
+                  
+                        display: flex;
+                        flex-direction:column;
+                        text-align: center;
+                        justify-content: center;
+                        align-items: center;
+                        img{
+                            width: 100%;
+                            aspect-ratio: 3/2;
+                            object-fit: contain;
+                            &.scale2{
+                                transform: scale(2);
+                            }
+                        }
+                       
+                       
+                        
+                    }
+                    &:hover{
+                        .patner-name{
+
+                            animation-name: slideup;
+                            animation-duration: 0.8s;
+                            animation-fill-mode: forwards;
+                            animation-timing-function: ease-out;
+                        }
+                        .patner-img{
+                             filter: grayscale(0%);
+                            opacity: 1;
+                            transform: scale(1.1);
+                            transition: all .8s;
+                        }
+                    }
+                    .patner-name{
+                        
+                        text-align: center;
+                        width: 100%;
+               
+                        
+                        animation-name: slidedown;
+                        animation-duration: 0.8s;
+                        animation-fill-mode: forwards;
+                        animation-timing-function: ease-out;
+                        label{
+                            font-size: 13px;
+                            font-family: poppins;
+                            background: #333;
+                            color: #ffcec5;
+                            padding: 10px;
+                            border-radius: 5px;
+                            font-weight: 600;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .dorms{
+        width: 100%;
+        background-color: white;
+        padding: 40px 100px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .dorms-head{
+            label{
+                color: #333;
+                font-size: 30px;
+                font-family: poppins;
+
+            }
+        }
+        .dorms-body{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding: 0 40px;
+            .dorm{
+              margin-right: 15px;
+              margin-bottom: 15px;
+              border-radius: 30px;
+              color: #f85235;
+              font-weight: 500;
+              cursor: pointer;
+              background-color: #f3f3f3;
+              padding: 8px 16px;
+              font-size: 13px;
+              font-family: poppins;
+
+            }
+        }
+    }
+    .sports-body{
+    
+        background: rgb(251, 251, 251);
+        padding-top: 50px;
+        margin-bottom: 60px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #dedede;
+      .sports-head{
+        padding: 20px 100px;
+        color: #333;
+
+        display: flex;
+        flex-direction: column;
+            font-family: poppins;
+            label{
+                font-size: 30px;
+            }
+            span{
+                font-size: 18px;
+
+            }
+            
+     
+            
+        }
+    .sport-link{
+        padding-top: 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+     a{
+        color: #f85235;
+            font-family: poppins;
+            font-size: 18px; 
+            transition: all .6s;
+     }
+            color:#FF775F;
+            font-family: poppins;
+            font-size: 18px;
+            transition: all .6s;
+            &:hover{
+                color: #f85235;
+                transition: all .6s;
+            }
+
+
+    i{
+font-size: 23px;
+    }
+        
+    }
+    }
+    
+    .sports{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+  
+        padding: 20px 100px;
+        .sport{
+            flex-basis: calc(33.33% - 10px); /* Adjust this value based on your desired spacing */
+            
+            width: 20%;
+           // margin-right: 10px;
+           padding-bottom: 4%;
+            margin-bottom: 10px;
+            img{
+                width: 90% !important;
+                object-fit: cover;
+                border-radius: 10px;
+            }
+            .sport-name{
+                margin-top: 14px;
+                label{
+                    font-family:Circular Std, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+                    color: #333;
+                    font-weight: 500;
+                    font-size: 25px;
+                }
+            }
+            .sport-desc{
+                margin-top: 10px;
+                p{
+                    width: 95%;
+                    font-family: poppins;
+                    font-weight: 350;
+                    color: #343434;
+                    text-align:left;
+                }
+            }
+
+        }
+    }
+    .schedule{
+        padding: 50px 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        .schedule-content{
+            .schedule-head{
+                width: 80%;
+                label{
+                    font-family: poppins;
+                    font-size: 30px;
+                    font-weight: 500;
+                    color: #333;
+                }
+                p{
+                    margin-top: 15px;
+                    font-size: 18px;
+                    font-weight: 450;
+                    font-family: Lato;
+                    line-height: 1.5;
+                    color: #515151;
+                }
+    
+            
+            }
+            .schedule-btn{
+                margin-top: 20px;
+                width: max-content;
+                    background: #FF775F;
+                    color: #fff;
+                    border-style: solid;
+                    
+                    border-radius: 30px;
+                    font-family: poppins;
+                    font-size: 16px;
+                    font-weight: 500;
+                    padding: 9px 10px;
+                    transition: all .5s;
+                    text-transform: capitalize;
+    
+                    &:hover{
+                        background: white;
+                        color:#FF775F;
+                        border-color:#FF775F ;
+                        transition: all .5s;
+                    }
+                    a{
+                        color: inherit;
+                    }
+                    
+                    
+                }
+        }
+        .schedule-img{
+            img{
+                width: 500px;
+                height: 500px;
+                border-radius: 10px;
+                object-fit: cover;
+            }
+        }
+       
+    }
+
+}
+
+@keyframes slideup {
+
+    0% {
+        transform: translateY(100%);
+
+        opacity: 0;
+        }
+        100% {
+            transform: translateY(0%);
+            opacity: 1;
+        }
+}
+
+
+@keyframes slidedown {
+    0% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100%);
+        opacity: 0;
+        }
+
+    
+}
