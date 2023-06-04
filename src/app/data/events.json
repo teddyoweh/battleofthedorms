@@ -1,0 +1,78 @@
+[
+    {
+        "type":"Events",
+        "name":"Commencement Ceremony - Kickoff",
+        "day":"4",
+        "month":"September",
+        "short_month":"Sept",
+        "year":"2023",
+        "time":"7:00PM",
+        "location":"Lamar Johnson Science Building Auditorium",
+        "sec":"event"
+    },
+    {
+        "type":"Basketball",
+        "name":"Basketball - Initial Lineup",
+        "day":"5",
+        "month":"September",
+        "short_month":"Sept",
+        "year":"2023",
+        "time":"7:00PM",
+        "location":"Tarleton Recreation Center - Basketball Court 1",
+        "sec":"sport",
+        "team1":"Centennial",
+        "team2":"Texan Hall"
+    },
+    {
+        "type":"Basketball",
+        "name":"Basketball - Initial Lineup",
+        "day":"5",
+        "month":"September",
+        "short_month":"Sept",
+        "year":"2023",
+        "time":"7:00PM",
+        "location":"Tarleton Recreation Center - Basketball Court 2",
+        "sec":"sport",
+        "team1":"Legacy",
+        "team2":"Off Campus"
+    },
+    {
+        "type":"Basketball",
+        "name":"Basketball - Initial Lineup",
+        "day":"5",
+        "month":"September",
+        "short_month":"Sept",
+        "year":"2023",
+        "time":"8:10PM",
+        "location":"Tarleton Recreation Center - Basketball Court 1",
+        "sec":"sport",
+        "team1":"Texan Village",
+        "team2":"Integ"
+    },
+    {
+        "type":"Basketball",
+        "name":"Basketball - Initial Lineup",
+        "day":"5",
+        "month":"September",
+        "short_month":"Sept",
+        "year":"2023",
+        "time":"8:10PM",
+        "location":"Tarleton Recreation Center - Basketball Court 2",
+        "sec":"sport",
+        "team1":"TSOUTH",
+        "team2":"Legends"
+    },
+    {
+        "type":"Swimming",
+        "name":"Swimming - Batch A & B",
+        "day":"9",
+        "month":"September",
+        "short_month":"Sept",
+        "year":"2023",
+        "time":"1:10PM",
+        "location":"TBA",
+        "sec":"batch",
+        "team1":"TSOUTH",
+        "team2":"Legends"
+    }
+]
