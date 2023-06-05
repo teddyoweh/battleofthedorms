@@ -8,7 +8,7 @@ import eventdata from '../data/events.json'
 
   // Replace 'your-icon-library' with the actual library you're using for icons
 
-function RenderEventType({ type, name }) {
+function RenderEventType({ type, name }:any) {
   const sports = [
     { name: 'All', icon: 'bx bxs-dashboard' },
     { name: 'Events', icon: <Ticket size="14" color="#a5a5a5" />, iconw: <Ticket size="20" color="white" />, ic: true },
@@ -18,7 +18,7 @@ function RenderEventType({ type, name }) {
     { name: 'Table Tennis', icon: 'bx bx-tennis-ball' },
   ];
 
-  const getIcon = (icon, isActive) => {
+  const getIcon = (icon:any, isActive:any) => {
     if (isActive) {
       return <i>{icon}</i>;
     } else {
@@ -65,7 +65,7 @@ function RenderEventType({ type, name }) {
 }
 
  
-function RenderLocation({location}){
+function RenderLocation({location}:any){
     return (
         <div className="loc">
             <a className="location">
@@ -81,7 +81,7 @@ function RenderLocation({location}){
     )
 }
 function RenderSchedule(){
-    function getShortDayOfWeek(month, day, year) {
+    function getShortDayOfWeek(month:any, day:any, year:any) {
         const months = [
           'January', 'February', 'March', 'April', 'May', 'June',
           'July', 'August', 'September', 'October', 'November', 'December'
