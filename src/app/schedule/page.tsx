@@ -80,7 +80,7 @@ function RenderLocation({location}:any){
         </div>
     )
 }
-function RenderSchedule({sporttype}){
+function RenderSchedule({sporttype}:any){
     function getShortDayOfWeek(month:any, day:any, year:any) {
         const months = [
           'January', 'February', 'March', 'April', 'May', 'June',
