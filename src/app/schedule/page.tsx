@@ -80,7 +80,7 @@ function RenderLocation({location}:any){
         </div>
     )
 }
-function RenderSchedule(){
+function RenderSchedule({sporttype}){
     function getShortDayOfWeek(month:any, day:any, year:any) {
         const months = [
           'January', 'February', 'March', 'April', 'May', 'June',
@@ -95,12 +95,36 @@ function RenderSchedule(){
         return daysOfWeek[dayOfWeekIndex];
       }
       
+      const batchA = [
+        'Honors',
+        'TNORTH',
+        'Integ',
+        'Legends',
+        'Legacy',
+        'Centennial'
+      ];
+      
+      const batchB = [
+    
+        'Heritage',
+        'Texan Village',
+        'TSOUTH',
+        'Texan Hall',
+  
+        'Hunnewell & The Edge',
+        'Off Campus'
+      ];
       
     return (
         <div className="render-schedule">
             {eventdata.map((event,index)=>{
                 const day = getShortDayOfWeek(event.month,event.day,event.year)
+                const display = sporttype=='All'?true: sporttype.toLowerCase()==event.type.toLowerCase()
+                const batch = event.batch =='A'?batchA:batchB
                 return (
+                  <>
+                  { display && 
+              
                     <div className="event">
                     <div className="date">
                         <small>{day+", "+event.short_month}</small>
@@ -115,17 +139,40 @@ function RenderSchedule(){
                 event.sec=="event"?
                 <div className="cer">
                     <RenderEventType type={event.type }name={event.name}/>
-                        <label htmlFor="">Opening Ceremony / Commencement </label>
+                        <label htmlFor="">{event.name} </label>
                     <RenderLocation location={event.location}/>
                     </div>
                 :
+             
                 <div className="comp">
                 <RenderEventType  type={event.type} name={event.name}/>
+                {event.sec=="sport"?
                 <div className="vs">
-                    <label htmlFor="">{event.team1}</label>
-                    <div className="vs-text">VS</div>
-                    <label htmlFor="">{event.team2}</label>
+                <label htmlFor="">{event.team1}</label>
+                <div className="vs-text">VS</div>
+                <label htmlFor="">{event.team2}</label>
+            </div>
+                :
+                <div className="batches">
+{
+  batch.map((b,index)=>{
+  
+    return (
+      <div className="batch">
+        <span>
+          {index+1}
+        </span>
+      <label className="" htmlFor="">{b} </label>
+
+      </div>
+
+
+    )
+  })
+}
                 </div>
+              
+                }
                 <RenderLocation location={event.location}/>
         
                           </div>
@@ -135,6 +182,8 @@ function RenderSchedule(){
                    
                     </div>
                 </div>
+                }
+                </>
                 )
             })}
           
@@ -200,7 +249,7 @@ export default function SchedulePage(){
                     </div>
                 <div className="schedule-box">
                 
-                    <RenderSchedule/>
+                    <RenderSchedule sporttype={activesport}/>
                 </div>
                 
             </div>
