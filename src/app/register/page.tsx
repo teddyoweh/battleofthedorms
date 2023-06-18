@@ -2,6 +2,7 @@ import NavComponent from "../components/Nav";
 import '../styles/auth.scss'
 import basketball from '../assets/basketball-auth.jpeg'
 import swimming from '../assets/swimming auth.jpeg'
+import track from '../assets/track auth.jpeg'
 import Link from "next/link";
 export default function RegisterPage(){
     const data = [
@@ -11,9 +12,14 @@ export default function RegisterPage(){
             img:basketball.src
         },
         {
-            name:'Swimming(Fall 2023)',
+            name:'Swimming (Fall 2023)',
             link:'register/swimming',
             img:swimming.src
+        },
+        {
+            name:'Track (Fall 2023)',
+            link:'register/track',
+            img:track.src
         }
     ]
     return (

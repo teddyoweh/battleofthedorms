@@ -1,16 +1,21 @@
 .auth{
     display: flex;
     flex-direction: column;
- 
+    width: 100%;
     height: 100vh;
     .sport-auth{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-         
+        width: 100%;
         .content{
             padding: 20px 40px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
             .sport{
+                margin-right:40px;
                 display: flex;
                 flex-direction: row;
                 img{
