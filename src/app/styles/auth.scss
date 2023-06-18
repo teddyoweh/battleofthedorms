@@ -1,0 +1,58 @@
+.auth{
+    display: flex;
+    flex-direction: column;
+ 
+    height: 100vh;
+    .sport-auth{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+         
+        .content{
+            padding: 20px 40px;
+            .sport{
+                display: flex;
+                flex-direction: row;
+                img{
+                    object-fit: cover;
+                    border-radius: 10px;
+                    height: 80px;
+                    width: 80px;
+                    
+                }
+                .info{
+                    padding-left: 10px;
+                    padding-top: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    label{
+                        font-family: poppins;
+                        font-weight: 550;
+                        color: #333;
+                        
+                    }
+                    a{
+                    font-family: Lato;
+                    padding: 8px 10px;
+                    border-radius: 30px;
+                    border-width: 1px;
+                    border-style: solid;
+                    border-color: #c7c5c5;
+                    width: max-content;
+                    margin-top: 5px;
+                    color: #333;
+                    background-color: #fcfcfc;
+                    transition: all .3s;
+                    &:hover{
+                    background-color: #333;
+                    color: white;
+                    transition: all .5s;
+                    }
+                    }
+                }
+            }
+        }
+         
+    }
+}
+ 

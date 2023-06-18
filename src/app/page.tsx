@@ -112,10 +112,10 @@ export default function Home() {
       </p>
     </div>
     <div className="hero-btns">
-    <Link href='participate'>
+    <Link href='attend'>
        Attend Event
       </Link>
-      <Link href='participate'>
+      <Link href='register'>
         Be the face of your dorm - Sign Up
       </Link>
 
